@@ -1,4 +1,4 @@
-package com.example.espion;
+package xyz.luan.espion;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

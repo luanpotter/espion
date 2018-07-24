@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "808437802932",
+    "firebase_url": "https://espion-api.firebaseio.com",
+    "project_id": "espion-api",
+    "storage_bucket": "espion-api.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808437802932:android:a926cf771d3aea26",
+        "android_client_info": {
+          "package_name": "xyz.luan.espion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808437802932-gnonqfkjd5ir8743n3bn064asnj3bo7c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZD2BoBhTgAsqObXry-f7a4ICLieBXl5U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
