@@ -1,6 +1,10 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:uuid/uuid.dart';
 
+final uuid = new Uuid();
 final TextStyle btnStyle = new TextStyle();
 
 void main() => runApp(MyApp());
@@ -26,11 +30,15 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
-  void host() {
-    Firestore.instance.collection('rooms').document().setData({ 'players': '[]' });
+  void host() async {
+    String key = base64.encode(uuid.v4().toString().runes.toList()).substring(0, 6);
+    print('Using key: $key');
+    Firestore.instance.collection('rooms').document(key).collection('players').add({'id': 'Luan'});
   }
 
-  void join() {}
+  void join() {
+    // TODO
+  }
 
   @override
   Widget build(BuildContext context) {
